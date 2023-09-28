@@ -1,3 +1,5 @@
+// membuat handler untuk pop up
+// import komponen
 import React from "react";
 import Modal from "react-modal";
 import "./handler.css"; 

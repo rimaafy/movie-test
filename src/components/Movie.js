@@ -1,15 +1,17 @@
+// membuat movie list
+// import komponen
 import React, { useState } from "react";
-import Handler from "./Handler"; 
+import Handler from "./Handler"; //import file dari handler.js
 
 const Movie = ({ movie }) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = () => {
-    setModalIsOpen(true);
+    setModalIsOpen(true); //open pop up saat item film di klik
   };
 
   const closeModal = () => {
-    setModalIsOpen(false);
+    setModalIsOpen(false); //close pop up saat tombol "X" di klik
   };
 
   return (
@@ -22,7 +24,7 @@ const Movie = ({ movie }) => {
           src={movie.Poster}
           alt={movie.Title}
           className="movie-poster"
-          onClick={openModal} 
+          onClick={openModal} //open pop up saat poster di klik
         />
         <p>({movie.Year})</p>
       </div>
